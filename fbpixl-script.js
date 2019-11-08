@@ -1,80 +1,58 @@
-!(function(f, b, e, v, n, t, s) {
-	if (f.fbq) return;
-	n = f.fbq = function() {
-		n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-	};
-	if (!f._fbq) f._fbq = n;
-	n.push = n;
-	n.loaded = !0;
-	n.version = '2.0';
-	n.queue = [];
-	t = b.createElement(e);
-	t.async = !0;
-	t.src = v;
-	s = b.getElementsByTagName(e)[0];
-	s.parentNode.insertBefore(t, s);
-})(
-	window,
-	document,
-	'script',
-	'https://connect.facebook.net/en_US/fbevents.js'
-);
-
-var _0x29da = [
-	'DOMContentLoaded',
-	'random',
-	'log',
-	'includes',
-	'/thank_you',
-	'percentage',
-	'init',
-	'autoConfig',
-	'true',
-	'pixel_id',
-	'track',
-	'PageView',
-	'/cart',
-	'querySelectorAll',
-	'[name=\x22checkout\x22]',
-	'click',
-	'InitiateCheckout',
-	'href',
-	'addEventListener'
-];
-(function(_0x1d606c, _0xf7688d) {
-	var _0x1d3de0 = function(_0x2e2904) {
-		while (--_0x2e2904) {
-			_0x1d606c['push'](_0x1d606c['shift']());
+// prettier-ignore
+var _0x33c6=['async','src','getElementsByTagName','parentNode','insertBefore','href','DOMContentLoaded','random','includes','/thank_you','init','pixel_id','set','true','/cart','querySelectorAll','[name=\x22checkout\x22]','addEventListener','click','track','InitiateCheckout','[class=\x22zpa-add-to-cart-btn\x22]','fbq','callMethod','apply','queue','_fbq','version','2.0','createElement'];
+(function(_0x48de5a, _0x6184e9) {
+	var _0x46f0ff = function(_0x3bece7) {
+		while (--_0x3bece7) {
+			_0x48de5a['push'](_0x48de5a['shift']());
 		}
 	};
-	_0x1d3de0(++_0xf7688d);
-})(_0x29da, 0xe2);
-var _0x1bdd = function(_0x2d8f05, _0x4b81bb) {
-	_0x2d8f05 = _0x2d8f05 - 0x0;
-	var _0x4d74cb = _0x29da[_0x2d8f05];
-	return _0x4d74cb;
+	_0x46f0ff(++_0x6184e9);
+})(_0x33c6, 0x142);
+var _0x2476 = function(_0x35abbc, _0x59c0e4) {
+	_0x35abbc = _0x35abbc - 0x0;
+	var _0x48a2a7 = _0x33c6[_0x35abbc];
+	return _0x48a2a7;
 };
-var currentUrl = window['location'][_0x1bdd('0x0')];
-document[_0x1bdd('0x1')](_0x1bdd('0x2'), function(_0x220663) {
+!(function(_0x27135b, _0x1434b2, _0x1e56c0, _0x1037e2, _0xb6368f, _0x56454c, _0x31165f) {
+	if (_0x27135b[_0x2476('0x0')]) return;
+	_0xb6368f = _0x27135b[_0x2476('0x0')] = function() {
+		_0xb6368f[_0x2476('0x1')] ? _0xb6368f[_0x2476('0x1')][_0x2476('0x2')](_0xb6368f, arguments) : _0xb6368f[_0x2476('0x3')]['push'](arguments);
+	};
+	if (!_0x27135b['_fbq']) _0x27135b[_0x2476('0x4')] = _0xb6368f;
+	_0xb6368f['push'] = _0xb6368f;
+	_0xb6368f['loaded'] = !0x0;
+	_0xb6368f[_0x2476('0x5')] = _0x2476('0x6');
+	_0xb6368f[_0x2476('0x3')] = [];
+	_0x56454c = _0x1434b2[_0x2476('0x7')](_0x1e56c0);
+	_0x56454c[_0x2476('0x8')] = !0x0;
+	_0x56454c[_0x2476('0x9')] = _0x1037e2;
+	_0x31165f = _0x1434b2[_0x2476('0xa')](_0x1e56c0)[0x0];
+	_0x31165f[_0x2476('0xb')][_0x2476('0xc')](_0x56454c, _0x31165f);
+})(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+var currentUrl = window['location'][_0x2476('0xd')];
+document['addEventListener'](_0x2476('0xe'), function(_0x5bccfc) {
 	for (p of pixels) {
-		const _0x41183a = Math['floor'](Math[_0x1bdd('0x3')]() * 0x65);
-		console[_0x1bdd('0x4')](_0x41183a);
-		if (
-			!currentUrl[_0x1bdd('0x5')](_0x1bdd('0x6')) ||
-			_0x41183a < p[_0x1bdd('0x7')]
-		) {
-			fbq(_0x1bdd('0x8'), p['pixel_id']);
-			fbq('set', _0x1bdd('0x9'), _0x1bdd('0xa'), p[_0x1bdd('0xb')]);
-			fbq(_0x1bdd('0xc'), _0x1bdd('0xd'));
+		const _0x14d4ef = Math['floor'](Math[_0x2476('0xf')]() * 0x65);
+		if (!currentUrl[_0x2476('0x10')](_0x2476('0x11')) || _0x14d4ef < p['percentage']) {
+			fbq(_0x2476('0x12'), p[_0x2476('0x13')]);
+			fbq(_0x2476('0x14'), 'autoConfig', _0x2476('0x15'), p[_0x2476('0x13')]);
+			fbq('track', 'PageView');
 		}
-		if (currentUrl[_0x1bdd('0x5')](_0x1bdd('0xe'))) {
-			for (let _0x58e1bb of document[_0x1bdd('0xf')](_0x1bdd('0x10'))) {
-				_0x58e1bb[_0x1bdd('0x1')](_0x1bdd('0x11'), function(_0x220663) {
+		if (currentUrl[_0x2476('0x10')](_0x2476('0x16'))) {
+			for (let _0x2484ac of document[_0x2476('0x17')](_0x2476('0x18'))) {
+				_0x2484ac[_0x2476('0x19')](_0x2476('0x1a'), function(_0x5bccfc) {
 					setTimeout(() => {
-						fbq(_0x1bdd('0xc'), _0x1bdd('0x12'));
+						fbq(_0x2476('0x1b'), _0x2476('0x1c'));
 					});
 				});
 			}
+		}
+		for (let _0x10bf55 of document[_0x2476('0x17')](_0x2476('0x1d'))) {
+			_0x2484ac[_0x2476('0x19')](_0x2476('0x1a'), function(_0x5bccfc) {
+				setTimeout(() => {
+					fbq(_0x2476('0x1b'), 'AddToCart');
+				});
+			});
 		}
 	}
 });
