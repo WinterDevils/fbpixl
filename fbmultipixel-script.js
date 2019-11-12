@@ -39,9 +39,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	for (let bt of document.querySelectorAll('button.zpa-add-to-cart-btn')) {
 		bt.addEventListener('click', function(event) {
 			console.log('fbclick');
-			setTimeout(() => {
-				fbq('track', 'AddToCart');
-			});
+			fbq('track', 'AddToCart');
 		});
 	}
 });
