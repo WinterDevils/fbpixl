@@ -18,6 +18,7 @@
 var currentUrl = window.location.href;
 
 document.addEventListener('DOMContentLoaded', function(event) {
+	console.log('fbpixl');
 	for (p of pixels) {
 		const rand = Math.floor(Math.random() * 101);
 		if (!currentUrl.includes('/thank_you') || rand < p.percentage) {
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	if (currentUrl.includes('/cart')) {
 		for (let bt of document.querySelectorAll('[name="checkout"]')) {
 			bt.addEventListener('click', function(event) {
+				console.log('fbclick');
 				setTimeout(() => {
 					fbq('track', 'InitiateCheckout');
 				});
